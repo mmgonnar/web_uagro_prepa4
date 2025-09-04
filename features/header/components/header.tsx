@@ -7,15 +7,11 @@ import { cn } from '@/utils/functions';
 //import Logo from './logo';
 import Navbar from './navbar';
 
-function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
+export default function Header() {
   return (
-    <header className={cn('bg-main-blue')}>
+    <header className="bg-main-blue">
       <div className="max-w-8xl m-auto px-2 py-2 md:px-6">
-        <div className={cn('flex h-16 items-center justify-between')}>
+        <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-3">
             {/* <Logo /> */}
             <Image
@@ -35,5 +31,3 @@ function Header() {
     </header>
   );
 }
-
-export default Header;

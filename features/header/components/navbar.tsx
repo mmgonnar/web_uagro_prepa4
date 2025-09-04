@@ -7,8 +7,9 @@ import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/utils/functions';
 
-function Navbar() {
+export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const headerItems = menuItems.filter(item => item.isHeader);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   return (
@@ -40,7 +41,7 @@ function Navbar() {
           isMenuOpen && 'border-t-1 border-white'
         )}
       >
-        {menuItems.map(item => (
+        {headerItems.map(item => (
           <Link
             key={item.name}
             href={item.href}
@@ -55,5 +56,3 @@ function Navbar() {
     </>
   );
 }
-
-export default Navbar;
