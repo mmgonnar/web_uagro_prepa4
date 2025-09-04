@@ -2,46 +2,34 @@
 
 import Image from 'next/image';
 import Logo from '../../../public/logo-05.webp';
-import Link from 'next/link';
-import { menuItems } from '@/utils/constants';
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Menu, X } from "lucide-react";
+import { cn } from '@/utils/functions';
+//import Logo from './logo';
+import Navbar from './navbar';
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="bg-main-blue">
-      <div className="m-auto max-w-8xl px-6 py-2">
-        <div className="flex h-16 items-center justify-between">
+    <header className={cn('bg-main-blue')}>
+      <div className="max-w-8xl m-auto px-2 py-2 md:px-6">
+        <div className={cn('flex h-16 items-center justify-between')}>
           <div className="flex items-center space-x-3">
-            <Image src={Logo} alt="Logotipo de UAGro" className="h-14 w-14" />
-            <div className="text-white">
-              <p className="text-lg font-bold">Preparatoria No. 4</p>
-              <p className="text-md font-bold">'Pablo Neruda'</p>
+            {/* <Logo /> */}
+            <Image
+              src={Logo}
+              alt="Logotipo de UAGro"
+              className="h-13 w-13 md:h-14 md:w-14"
+            />
+            <div className="h-8 border-l-1 border-white md:h-12"></div>
+            <div className="w-full text-white">
+              <p className="text-sm font-bold md:text-lg">Preparatoria No. 4</p>
+              <p className="md:text-md text-sm font-bold">'Pablo Neruda'</p>
             </div>
           </div>
-          <nav className="hidden space-x-6 md:flex">
-            {menuItems.map(item => (
-              <Link
-                href={item.href}
-                className="hover:text-main-red font-medium text-white transition-colors duration-200"
-              >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-          {/* Burger */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden text-primary-foreground hover:bg-primary/10"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
-          
+          <Navbar />
         </div>
       </div>
     </header>
