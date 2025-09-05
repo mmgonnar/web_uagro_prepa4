@@ -1,10 +1,18 @@
-export const menuItems = [
-  { name: 'Inicio', href: '/', isHeader: true },
-  { name: 'Historia', href: '/', isHeader: true  },
-  { name: 'Equipo', href: '/', isHeader: true  },
-  { name: 'Noticias', href: '/', isHeader: true  },
-  { name: 'Valores', href: '/', isFooter: true },
-  { name: 'Himno & Porra', href: '/', isFooter: true  },
-  { name: 'Aviso de privacidad', href: '/', isFooter: true  },
-  { name: 'Transparencia', href: '/', isFooter: true  },
+export const headerItems = [
+  { name: 'Inicio', href: '/'},
+  { name: 'Historia', href: '/' },
+  { name: 'Equipo', href: '/' },
+  { name: 'Noticias', href: '/' },
+
 ];
+export const footerItems = [
+  { name: 'Valores', href: '/'},
+  { name: 'Himno & Porra', href: '/' },
+  { name: 'Aviso de privacidad', href: '/'},
+  { name: 'Transparencia', href: '/'},
+]
+
+export const menuItems = [
+  ...headerItems,
+  ...footerItems
+]

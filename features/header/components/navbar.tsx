@@ -1,21 +1,20 @@
 'use client';
 
 import Link from 'next/link';
-import { menuItems } from '@/utils/constants';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/utils/functions';
+import { headerItems } from '@/utils/constants';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const headerItems = menuItems.filter(item => item.isHeader);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   return (
     <>
       <nav className="hidden space-x-6 md:flex">
-        {menuItems.map(item => (
+        {headerItems.map(item => (
           <Link
             key={item.name}
             href={item.href}
