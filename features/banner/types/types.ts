@@ -1,9 +1,9 @@
 import { Users, BookOpen, GraduationCap} from 'lucide-react';
 
-const bannerDataIcons = {
+export const bannerDataIcons = {
     Users: Users,
     BookOpen: BookOpen,
-    GraduationCap:GraduationCap
+    GraduationCap: GraduationCap
   }
 
 export interface IconItem {

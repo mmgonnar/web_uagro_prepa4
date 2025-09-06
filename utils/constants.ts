@@ -1,5 +1,4 @@
-import { Users, BookOpen, GraduationCap } from 'lucide-react';
-import { IconItem } from "./types";
+//import { IconItem } from "./types";
 
 export const headerItems = [
   { name: 'Inicio', href: '/'},
@@ -27,14 +26,9 @@ export const socialMediaItems = [
   {href:"/", alt:"X-Twitter", src:"https://www.vectorlogo.zone/logos/x/x-icon.svg"},
 ]
 
-export const bannerDataIcons = {
-  Users: Users,
-  BookOpen: BookOpen,
-  GraduationCap:GraduationCap
-}
 
-export const schoolData:IconItem[] = [
+export const schoolData = [
  { icon: "Users", data:"1200+",  text:"Estudiantes Activos" },
- { icon: "Users", data:"60",  text:"Años de experiencia" },
- { icon: "Users", data:"30+",  text:"Docentes capacitados" },
+ { icon: "BookOpen", data:"60",  text:"Años de experiencia" },
+ { icon: "GraduationCap", data:"30+",  text:"Docentes capacitados" },
 ]
