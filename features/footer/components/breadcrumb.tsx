@@ -2,7 +2,9 @@
 import * as React from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { ChevronRight, MoreHorizontal } from 'lucide-react';
+import Link from 'next/link';
 import { cn } from '@/utils/functions';
+import { MenuItem } from '@/utils/types';
 
 function Breadcrumb({ ...props }: React.ComponentProps<'nav'>) {
   return <nav aria-label="breadcrumb" data-slot="breadcrumb" {...props} />;
@@ -95,6 +97,31 @@ function BreadcrumbEllipsis({
       <MoreHorizontal className="size-4" />
       <span className="sr-only">More</span>
     </span>
+  );
+}
+
+interface CustomBreadcrumbProps {
+  menuItems: MenuItem[];
+}
+
+export default function CustomBreadcrumb({ menuItems }: CustomBreadcrumbProps) {
+  return (
+    <>
+      <Breadcrumb className="md:hidden">
+        <BreadcrumbList>
+          {menuItems.map((item, index) => (
+            <div key={item.name} className="flex items-center justify-center">
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link href={item.href}>{item.name}</Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              {index < menuItems.length - 1 && <BreadcrumbSeparator />}
+            </div>
+          ))}
+        </BreadcrumbList>
+      </Breadcrumb>
+    </>
   );
 }
 
