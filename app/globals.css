@@ -41,7 +41,11 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-main-blue: #1c3452;
+  --color-secondary-blue: #121B2B;
   --color-main-red: #d61f2b;
+  --color-secondary-red: #9F3135;
+  --color-main-grey: #E4E5E4;
+  --color-secondary-grey: #B5B6B5;
 }
 
 :root {

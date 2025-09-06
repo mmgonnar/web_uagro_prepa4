@@ -1,3 +1,6 @@
+import { Users, BookOpen, GraduationCap } from 'lucide-react';
+import { IconItem } from "./types";
+
 export const headerItems = [
   { name: 'Inicio', href: '/'},
   { name: 'Historia', href: '/' },
@@ -5,6 +8,7 @@ export const headerItems = [
   { name: 'Noticias', href: '/' },
 
 ];
+
 export const footerItems = [
   { name: 'Valores', href: 'https://www.uagro.mx/index.php/valores-uagro'},
   { name: 'Himno & Porra', href: 'https://drive.google.com/file/d/1oB8YMy1QLn0qjjDUZyvfw_ketSc7iutQ/view?usp=drive_link' },
@@ -21,4 +25,16 @@ export const socialMediaItems = [
   {href:"/", alt:"Facebook", src:"https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg"},
   {href:"/", alt:"Instagram", src:"https://www.vectorlogo.zone/logos/instagram/instagram-icon.svg"},
   {href:"/", alt:"X-Twitter", src:"https://www.vectorlogo.zone/logos/x/x-icon.svg"},
+]
+
+export const bannerDataIcons = {
+  Users: Users,
+  BookOpen: BookOpen,
+  GraduationCap:GraduationCap
+}
+
+export const schoolData:IconItem[] = [
+ { icon: "Users", data:"1200+",  text:"Estudiantes Activos" },
+ { icon: "Users", data:"60",  text:"Años de experiencia" },
+ { icon: "Users", data:"30+",  text:"Docentes capacitados" },
 ]
