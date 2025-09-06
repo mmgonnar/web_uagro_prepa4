@@ -2,10 +2,10 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
-import { cn } from '@/utils/functions';
+import { Button } from '@/features/header/components';
 import { headerItems } from '@/utils/constants';
+import { cn } from '@/utils/functions';
+import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
