@@ -12,6 +12,8 @@ export default function Home() {
       <Label text="Nuestra Historia">
         <History size={14} />
       </Label>
+      <Label variant="announcement" text="DIrector"></Label>
+      <Label variant="secondary" text="Nuestra Historia"></Label>
       <Footer />
     </main>
   );
