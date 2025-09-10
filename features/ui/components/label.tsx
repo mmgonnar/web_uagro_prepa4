@@ -1,4 +1,5 @@
 'use client';
+import { labelIcons } from '@/features/content-section/types/types';
 import { cn } from '@/utils/functions';
 import { ReactNode } from 'react';
 
@@ -6,6 +7,7 @@ interface LabelProps {
   children?: ReactNode;
   text: string;
   variant?: keyof typeof variants;
+  icon?: keyof typeof labelIcons;
 }
 
 const variants = {
@@ -18,7 +20,10 @@ export default function Label({
   text,
   children,
   variant = 'default',
+  icon,
 }: LabelProps) {
+  const IconComponent = labelIcons[icon as keyof typeof labelIcons];
+
   return (
     <div className="max-w-8xl">
       <div
@@ -28,7 +33,7 @@ export default function Label({
           children != null && 'gap-1'
         )}
       >
-        {children}
+        {IconComponent && <IconComponent size={18}></IconComponent>}
         <p>{text}</p>
       </div>
     </div>
