@@ -2,6 +2,10 @@ import Banner from '@/features/banner/components/banner';
 import ContentSection from '@/features/content-section/components/content-section';
 import Footer from '@/features/footer/components/footer';
 import Header from '@/features/header/components/header';
+import TimeLine from '@/features/timeline/components/my-timeline';
+import { TimelineLayout } from '@/features/timeline/components/timeline-layout';
+//import TimeLine from '@/features/timeline/components/my-timeline';
+import { historyData } from '@/features/timeline/utils/constants';
 
 export default function Home() {
   return (
@@ -17,7 +21,10 @@ export default function Home() {
         background="default"
         href="/nosotros"
       >
-        <div>Timeline Here</div>
+        <div>
+          {/* <TimeLine items={historyData} />
+          <TimelineLayout items={historyData} /> */}
+        </div>
       </ContentSection>
       <ContentSection
         background="grey"
