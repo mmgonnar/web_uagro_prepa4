@@ -5,7 +5,7 @@ import SchoolStats from './school-stats';
 
 export default function Banner() {
   return (
-    <section className="bg-main-blue/85 flex h-dvh items-center justify-center">
+    <section className="bg-main-blue/85 flex items-center justify-center p-15 md:h-dvh md:p-0">
       <div className="max-w-8xl m-auto">
         <div className="flex flex-col items-center justify-center gap-10 text-white">
           <div className="flex flex-col gap-2 text-center">

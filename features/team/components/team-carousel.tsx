@@ -1,0 +1,37 @@
+import * as React from 'react';
+
+//import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
+import Card from '@/features/ui/components/cards';
+import { administrativeTeam } from '../utils/constants';
+import { TeamMember } from '../utils/types';
+import TeamMemberCard from './team-member';
+
+export function CarouselSize() {
+  return (
+    <Carousel
+      opts={{
+        align: 'center',
+      }}
+      className="w-full max-w-6xl"
+    >
+      <CarouselContent>
+        {administrativeTeam.map((member: TeamMember) => (
+          <CarouselItem key={member.id} className="basis-1/2 md:basis-1/4">
+            <Card>
+              <TeamMemberCard key={member.id} member={member} />
+            </Card>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  );
+}

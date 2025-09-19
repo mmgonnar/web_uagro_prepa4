@@ -1,11 +1,18 @@
+import { Carousel } from '@/components/ui/carousel';
 import Banner from '@/features/banner/components/banner';
 import ContentSection from '@/features/content-section/components/content-section';
 import Footer from '@/features/footer/components/footer';
 import Header from '@/features/header/components/header';
+import Team from '@/features/team/components/team';
+import { CarouselSize } from '@/features/team/components/team-carousel';
+import TeamMemberCard from '@/features/team/components/team-member';
+import { administrativeTeam } from '@/features/team/utils/constants';
+import { TeamMember } from '@/features/team/utils/types';
 import TimeLine from '@/features/timeline/components/my-timeline';
 import { TimelineLayout } from '@/features/timeline/components/timeline-layout';
 //import TimeLine from '@/features/timeline/components/my-timeline';
 import { historyData } from '@/features/timeline/utils/constants';
+import Cards from '@/features/ui/components/cards';
 
 export default function Home() {
   return (
@@ -35,7 +42,7 @@ export default function Home() {
         href="/"
         buttonText="Directivos"
       >
-        <div>Team Here</div>
+        <CarouselSize />
       </ContentSection>
       <ContentSection
         icon="CircleAlert"
@@ -46,9 +53,7 @@ export default function Home() {
         background="default"
         href="/"
         buttonText="Ver todos los anuncios"
-      >
-        <div>Announcements</div>
-      </ContentSection>
+      ></ContentSection>
       <ContentSection
         icon="Newspaper"
         labelText="Noticias"

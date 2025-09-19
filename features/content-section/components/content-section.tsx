@@ -26,8 +26,7 @@ export default function ContentSection({
         <Label labelText={labelText} icon={icon} variant={labelVariant}></Label>
         <h3 className="text-xl font-semibold">{title}</h3>
         <p className="max-w-2xl">{mainText}</p>
-        {children}
-        {/* agregar condicional aqui */}
+        <div>{children}</div>
         {href ? (
           <Link href={href}>
             <Button>{buttonText}</Button>
