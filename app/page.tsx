@@ -4,7 +4,7 @@ import ContentSection from '@/features/content-section/components/content-sectio
 import Footer from '@/features/footer/components/footer';
 import Header from '@/features/header/components/header';
 import Team from '@/features/team/components/team';
-import { CarouselSize } from '@/features/team/components/team-carousel';
+import { TeamCarousel } from '@/features/team/components/team-carousel';
 import TeamMemberCard from '@/features/team/components/team-member';
 import { administrativeTeam } from '@/features/team/utils/constants';
 import { TeamMember } from '@/features/team/utils/types';
@@ -38,11 +38,13 @@ export default function Home() {
         icon="UserStar"
         labelText="Nuestra Equipo"
         title="Liderazgo Comprometido"
-        mainText="Un equipo de profesionales dedicados a la excelencia educativa y al desarrollo integral de nuestros estudiantes."
+        mainText="Conoce a nuestros subdirectores, un equipo de profesionales comprometidos con la excelencia educativa y el desarrollo integral de cada estudiante.
+
+"
         href="/"
-        buttonText="Directivos"
+        buttonText="Plantilla Docente"
       >
-        <CarouselSize />
+        <TeamCarousel />
       </ContentSection>
       <ContentSection
         icon="CircleAlert"

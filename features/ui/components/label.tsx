@@ -12,7 +12,7 @@ export default function Label({
   const IconComponent = labelIcons[icon as keyof typeof labelIcons];
 
   return (
-    <div className="max-w-50">
+    <div className="max-w-150">
       <div
         className={cn(
           'm-auto flex items-center justify-center gap-1 rounded-full px-5 py-1 text-xs',

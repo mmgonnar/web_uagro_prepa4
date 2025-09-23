@@ -57,5 +57,3 @@ export function TeamCards() {
     </>
   );
 }
-
-//export default {TeamCards}

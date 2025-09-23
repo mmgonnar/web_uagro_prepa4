@@ -46,6 +46,8 @@
   --color-secondary-red: #9F3135;
   --color-main-grey: #E4E5E4;
   --color-secondary-grey: #B5B6B5;
+  --breakpoint-custom-md: 59rem;
+  --breakpoint-custom-sm: 28rem;
 }
 
 :root {

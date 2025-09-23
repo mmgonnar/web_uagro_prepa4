@@ -13,7 +13,7 @@ import { administrativeTeam } from '../utils/constants';
 import { TeamMember } from '../utils/types';
 import TeamMemberCard from './team-member';
 
-export function CarouselSize() {
+export function TeamCarousel() {
   return (
     <Carousel
       opts={{
@@ -23,7 +23,10 @@ export function CarouselSize() {
     >
       <CarouselContent>
         {administrativeTeam.map((member: TeamMember) => (
-          <CarouselItem key={member.id} className="basis-1/2 md:basis-1/4">
+          <CarouselItem
+            key={member.id}
+            className="basis-auto md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
+          >
             <Card>
               <TeamMemberCard key={member.id} member={member} />
             </Card>
