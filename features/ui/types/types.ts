@@ -14,4 +14,5 @@ export const labelIcons = {
     labelText: string
     variant?: keyof typeof variants;
     icon?: keyof typeof labelIcons;
+    className?: String;
   }

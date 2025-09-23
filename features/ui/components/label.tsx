@@ -8,6 +8,7 @@ export default function Label({
   labelText,
   variant = 'default',
   icon,
+  className,
 }: LabelProps) {
   const IconComponent = labelIcons[icon as keyof typeof labelIcons];
 
@@ -17,7 +18,8 @@ export default function Label({
         className={cn(
           'm-auto flex items-center justify-center gap-1 rounded-full px-5 py-1 text-xs',
           variants[variant],
-          IconComponent != null && 'gap-2'
+          IconComponent != null && 'gap-2',
+          className
         )}
       >
         {IconComponent && <IconComponent size={18}></IconComponent>}

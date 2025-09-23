@@ -3,6 +3,7 @@ import Banner from '@/features/banner/components/banner';
 import ContentSection from '@/features/content-section/components/content-section';
 import Footer from '@/features/footer/components/footer';
 import Header from '@/features/header/components/header';
+import News from '@/features/news/components/news';
 import Team from '@/features/team/components/team';
 import { TeamCarousel } from '@/features/team/components/team-carousel';
 import TeamMemberCard from '@/features/team/components/team-member';
@@ -65,7 +66,9 @@ export default function Home() {
         href="/"
         buttonText="Más noticias"
       >
-        <div>News</div>
+        <div>
+          <News />
+        </div>
       </ContentSection>
       <Footer />
     </main>

@@ -25,9 +25,9 @@ export function TeamCarousel() {
         {administrativeTeam.map((member: TeamMember) => (
           <CarouselItem
             key={member.id}
-            className="basis-auto md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
+            className="basis-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
           >
-            <Card>
+            <Card className="max-w-[280px]">
               <TeamMemberCard key={member.id} member={member} />
             </Card>
           </CarouselItem>
