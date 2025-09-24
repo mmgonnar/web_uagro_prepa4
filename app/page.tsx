@@ -39,7 +39,7 @@ export default function Home() {
         icon="UserStar"
         labelText="Nuestra Equipo"
         title="Liderazgo Comprometido"
-        mainText="Conoce a nuestros subdirectores, un equipo de profesionales comprometidos con la excelencia educativa y el desarrollo integral de cada estudiante.
+        mainText="Conoce a nuestros directivos, un equipo de profesionales comprometidos con la excelencia educativa y el desarrollo integral de cada estudiante.
 
 "
         href="/"

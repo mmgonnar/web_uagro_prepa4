@@ -40,7 +40,7 @@ export function TeamCards() {
   return (
     <>
       {administrativeTeam.map((item, index) => (
-        <Card key={index} className="h-95 w-[30%] pb-8">
+        <Card key={index} className="h-95 pb-8">
           <div className="flex flex-col items-center justify-between pb-8">
             <img
               className="w-70 rounded-t-md"

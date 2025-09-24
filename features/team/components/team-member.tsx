@@ -14,8 +14,10 @@ export default function TeamMemberCard({ member }: TeamMemberCardProps) {
         src={member.imageUrl}
         alt={`Director ${member.name}`}
       />
-      <div className="flex w-full flex-col items-center gap-2 p-4">
-        <h3 className="font-semibold">{member.name}</h3>
+      <div className="flex w-full flex-col items-center gap-2 sm:py-3 md:p-4">
+        <h3 className="mt-2 text-base font-semibold md:text-xl">
+          {member.name}
+        </h3>
         <Label variant="announcement" labelText={member.position}></Label>
       </div>
     </div>
