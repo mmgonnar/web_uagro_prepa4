@@ -14,7 +14,7 @@ export default function TeamMemberCard({ member }: TeamMemberCardProps) {
         src={member.src}
         alt={`Director ${member.name}`}
         width={280}
-        height={280}
+        height={230}
         className="object-cover"
       />
       <div className="flex w-full flex-col items-center gap-2 sm:py-3 md:p-4">
