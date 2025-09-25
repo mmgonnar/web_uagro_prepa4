@@ -12,8 +12,10 @@ export default function Contact() {
             <MapPin size={18} />
 
             <p>
-              De Los Plateros 304A, Barrio de Mora, <br /> Taxco de Alarcón,
-              Guerrero.
+              Plan de Mora No. 5, Col. Fundiciones,
+              <br /> Taxco de Alarcón, Guerrero.
+              <br />
+              CP 40200
             </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2 text-center text-sm font-light md:flex-row md:items-start md:text-left md:text-base">
@@ -22,7 +24,7 @@ export default function Contact() {
           </div>
           <div className="flex flex-col items-center justify-center gap-2 text-center text-sm font-light md:flex-row md:items-start md:text-left md:text-base">
             <Mail size={20} />
-            <p className="">contacto@prepa4.uagro.mx</p>
+            <p className="">prepa4@uagro.mx</p>
           </div>
         </div>
       </div>
