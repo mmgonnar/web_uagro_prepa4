@@ -1,4 +1,4 @@
-import { Carousel } from '@/components/ui/carousel';
+import { Carousel } from '@/features/ui/components/carousel';
 import Banner from '@/features/banner/components/banner';
 import ContentSection from '@/features/content-section/components/content-section';
 import Footer from '@/features/footer/components/footer';

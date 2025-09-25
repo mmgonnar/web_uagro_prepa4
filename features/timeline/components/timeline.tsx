@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@/features/ui/components/badge';
 import { cn } from '@/utils/functions';
 
 const Timeline = React.forwardRef<

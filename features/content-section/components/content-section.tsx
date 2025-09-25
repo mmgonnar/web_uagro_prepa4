@@ -20,7 +20,10 @@ export default function ContentSection({
 }: ContentSectionProps) {
   return (
     <section
-      className={cn('mb-8 px-6 py-10 md:mb-10', backgrounds[background])}
+      className={cn(
+        'mb-8 px-1 py-10 md:mb-10 md:px-6',
+        backgrounds[background]
+      )}
     >
       <div className="md:gap m-auto flex max-w-7xl flex-col items-center justify-center gap-6 text-center">
         <Label labelText={labelText} icon={icon} variant={labelVariant}></Label>
