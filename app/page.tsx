@@ -4,6 +4,7 @@ import ContentSection from '@/features/content-section/components/content-sectio
 import Footer from '@/features/footer/components/footer';
 import Header from '@/features/header/components/header';
 import News from '@/features/news/components/news';
+import NewsSection from '@/features/news/components/news-section';
 import Team from '@/features/team/components/team';
 import { TeamCarousel } from '@/features/team/components/team-carousel';
 import TeamMemberCard from '@/features/team/components/team-member';
@@ -66,9 +67,7 @@ export default function Home() {
         href="/"
         buttonText="Más noticias"
       >
-        <div>
-          <News />
-        </div>
+        <NewsSection />
       </ContentSection>
       <Footer />
     </main>

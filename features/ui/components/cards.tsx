@@ -5,16 +5,25 @@ import Label from './label';
 import { ReactNode } from 'react';
 import { administrativeTeam } from '@/features/team/utils/constants';
 
+const animations = {
+  scale: 'transition-all duration-300 hover:z-10 hover:scale-[1.02]',
+  none: '',
+};
 interface CardProps {
   className?: string;
   children: ReactNode;
+  animation?: keyof typeof animations;
 }
 
-export default function Card({ className, children }: CardProps) {
+export default function Card({
+  className,
+  children,
+  animation = 'none',
+}: CardProps) {
   return (
     <div
       className={cn(
-        'border-main-grey m-auto max-w-2xl cursor-pointer rounded-md border bg-white p-4 transition-all hover:shadow-md',
+        `border-main-grey m-auto max-w-2xl cursor-pointer rounded-md border bg-white p-4 transition-all hover:shadow-md ${animations[animation]}`,
         className
       )}
     >
@@ -22,19 +31,6 @@ export default function Card({ className, children }: CardProps) {
     </div>
   );
 }
-
-// function Cards({ className, children }: CardsProps) {
-//   return (
-//     <div
-//       className={cn(
-//         'border-main-grey padding-4 m-auto flex max-w-2xl cursor-pointer rounded-md border-1 bg-white transition-all hover:shadow-md',
-//         className
-//       )}
-//     >
-//       {children}
-//     </div>
-//   );
-// }
 
 export function TeamCards() {
   return (
