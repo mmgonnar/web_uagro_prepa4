@@ -16,6 +16,7 @@ import { TimelineLayout } from '@/features/timeline/components/timeline-layout';
 import { historyData } from '@/features/timeline/utils/constants';
 import Cards from '@/features/ui/components/cards';
 import { LogoCarousel } from '@/features/logo-carousel/componentes/logo-carousel';
+import Announcements from '@/features/announcements/components/announcements';
 
 export default function Home() {
   return (
@@ -58,7 +59,10 @@ export default function Home() {
         background="default"
         href="/"
         buttonText="Ver todos los anuncios"
-      ></ContentSection>
+      >
+        <Announcements />
+        <Announcements />
+      </ContentSection>
       <LogoCarousel />
       <ContentSection
         icon="Newspaper"
