@@ -17,6 +17,8 @@ import { historyData } from '@/features/timeline/utils/constants';
 import Cards from '@/features/ui/components/cards';
 import { LogoCarousel } from '@/features/logo-carousel/componentes/logo-carousel';
 import Announcements from '@/features/announcements/components/announcements';
+import { Calendar, CalendarDayButton } from '@/features/ui/components/calendar';
+import AnnouncementsSection from '@/features/announcements/components/announcements-section';
 
 export default function Home() {
   return (
@@ -60,8 +62,7 @@ export default function Home() {
         href="/"
         buttonText="Ver todos los anuncios"
       >
-        <Announcements />
-        <Announcements />
+        <AnnouncementsSection />
       </ContentSection>
       <LogoCarousel />
       <ContentSection

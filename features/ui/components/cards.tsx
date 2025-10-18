@@ -6,7 +6,8 @@ import { ReactNode } from 'react';
 import { administrativeTeam } from '@/features/team/utils/constants';
 
 const animations = {
-  scale: 'transition-all duration-300 hover:z-10 hover:scale-[1.02]',
+  scale:
+    'transition-all duration-300 hover:z-10 hover:scale-[1.02] sm:hover:scale-[0]',
   none: '',
 };
 interface CardProps {
