@@ -5,8 +5,7 @@ Web UAGro Prepa 4 is a modern institutional website for **Preparatoria No. 4 "Pa
 ## Live Demo
 
 Check out the latest version of the app here:
-
-_Add your deployment URL here (e.g. web-uagro-prepa4.vercel.app)_
+**[web-uagro-prepa4.vercel.app](https://web-uagro-prepa4.vercel.app/)**
 
 ## Features
 
@@ -39,15 +38,15 @@ _Add your deployment URL here (e.g. web-uagro-prepa4.vercel.app)_
 
 ## Technologies Used
 
-| Area | Stack |
-|------|--------|
-| **Frontend** | React 19, Next.js 15 (App Router), TypeScript |
-| **Styling** | Tailwind CSS 4, PostCSS |
-| **UI** | Radix UI (via Shadcn UI), Lucide React, class-variance-authority, tailwind-merge, clsx |
+| Area           | Stack                                                                                                                                        |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Frontend**   | React 19, Next.js 15 (App Router), TypeScript                                                                                                |
+| **Styling**    | Tailwind CSS 4, PostCSS                                                                                                                      |
+| **UI**         | Radix UI (via Shadcn UI), Lucide React, class-variance-authority, tailwind-merge, clsx                                                       |
 | **Components** | Custom feature-based components (banner, header, footer, content-section, team, news, announcements, timeline, logo-carousel, ui primitives) |
-| **Carousel** | Embla Carousel (embla-carousel-react, embla-carousel-autoplay) |
-| **Calendar** | react-day-picker, date-fns |
-| **Tooling** | ESLint, Prettier (with Tailwind plugin), Turbopack for dev/build |
+| **Carousel**   | Embla Carousel (embla-carousel-react, embla-carousel-autoplay)                                                                               |
+| **Calendar**   | react-day-picker, date-fns                                                                                                                   |
+| **Tooling**    | ESLint, Prettier (with Tailwind plugin), Turbopack for dev/build                                                                             |
 
 ## Project Structure
 
@@ -133,8 +132,8 @@ public/                 # Static assets (images, logos, icons)
 
 For questions or suggestions about this project:
 
-- **Email**: _Add your email_
-- **LinkedIn**: _Add your LinkedIn_
-- **Repository**: _Add your GitHub repo URL_
+- **Email:** [mm.gonnar@gmail.com](mailto:mm.gonnar@gmail.com)
+- **LinkedIn:** [/mmgonnar](https://www.linkedin.com/in/mmgonnar/)
+- **Twitter:** [@mmgonnar](https://x.com/mmgonnar)
 
 Feedback and contributions are welcome. This project aims to give Preparatoria No. 4 "Pablo Neruda" a clear, modern presence on the web.
